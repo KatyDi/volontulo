@@ -10,15 +10,15 @@ import { RedirectComponent } from './redirect.component';
 import { WindowService, WindowFactory } from './window.service';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
 import { SubFooterComponent } from './sub-footer/sub-footer.component';
 
 
 const appRoutes: Routes = [
-  // {
-  //   path: '',
-  //   component: HomeComponent
-  // },
+  {
+    path: '',
+     component: HomeComponent
+  },
   {
     path: '**',
     component: RedirectComponent
@@ -30,7 +30,7 @@ const appRoutes: Routes = [
     AppComponent,
     RedirectComponent,
     HomeComponent,
-    NavbarComponent,
+    HeaderComponent,
     FooterComponent,
     SubFooterComponent
   ],
