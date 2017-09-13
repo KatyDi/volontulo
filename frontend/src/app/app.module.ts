@@ -15,14 +15,14 @@ import { SubFooterComponent } from './sub-footer/sub-footer.component';
 
 
 const appRoutes: Routes = [
+  //{
+  //  path: '',
+  //   component: HomeComponent
+  //},
   {
-    path: '',
-     component: HomeComponent
-  },
-  // {
-  //  path: '**',
-  //  component: RedirectComponent
-  // }
+   path: '**',
+   component: RedirectComponent
+  }
 ];
 
 @NgModule({
