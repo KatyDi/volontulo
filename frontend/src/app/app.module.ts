@@ -19,10 +19,10 @@ const appRoutes: Routes = [
     path: '',
      component: HomeComponent
   },
-  {
-    path: '**',
-    component: RedirectComponent
-  }
+  // {
+  //  path: '**',
+  //  component: RedirectComponent
+  // }
 ];
 
 @NgModule({
