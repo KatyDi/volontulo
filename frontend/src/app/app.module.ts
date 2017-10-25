@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { RedirectComponent } from './redirect.component';
 import { WindowService, WindowFactory } from './window.service';
 import { OffersComponent } from './offers/offers.component';
-import { HomeComponent } from './home/home.component';
+import { HomePageComponent } from './home/homepage.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CookieLawBannerComponent } from './cookie-law-banner/cookie-law-banner.component';
@@ -19,7 +19,7 @@ import { AboutUsComponent } from './static/about-us.component';
 const appRoutes: Routes = [
   // {
   //   path: '',
-  //   component: HomeComponent
+  //   component: HomePageComponent
   // },
   {
     path: 'o-nas',
@@ -35,7 +35,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     RedirectComponent,
-    HomeComponent,
+    HomePageComponent,
     HeaderComponent,
     FooterComponent,
     OffersComponent,
