@@ -3,6 +3,8 @@ import { TestBed, inject, async } from '@angular/core/testing';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CookieModule, CookieService } from 'ngx-cookie';
+import { RouterTestingModule } from '@angular/router/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,7 +26,8 @@ describe('AppComponent', () => {
       imports: [
         NgbModule.forRoot(),
         CookieModule.forRoot(),
-        HttpModule
+        HttpModule,
+        RouterTestingModule
       ],
       providers: [
         CookieService
@@ -36,6 +39,9 @@ describe('AppComponent', () => {
         FooterComponent,
         CookieLawBannerComponent
       ],
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+      ]
     }).compileComponents();
   }));
 
