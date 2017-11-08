@@ -21,8 +21,8 @@ import { AuthService } from './auth.service';
 
 const appRoutes: Routes = [
   {
-     path: '',
-     component: HomePageComponent
+    path: '',
+    component: HomePageComponent
   },
   {
     path: 'o-nas',
