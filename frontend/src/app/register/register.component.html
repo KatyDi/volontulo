@@ -25,6 +25,16 @@
 
     </div>
   </div>
+  <div class="col-md-9 offset-md-3 d-none">
+      <label class="col-md-3 col-form-label" for="id_honey">Are you a bot?</label>
+      <input
+        type="text"
+        id="id_honey"
+        ngModel
+        name="honeyBunny"
+        class="form-control"
+        #honeyBunny="ngModel" />
+  </div>
   <div class="form-check">
     <input type="checkbox" class="form-check-input" ngModel name="checkboxTA" value="accept" id="checkboxTA" required #checkboxTA="ngModel">
     <label for="checkboxTA" class="form-check-label">{{ ACCEPT_TERMS }}*</label>
