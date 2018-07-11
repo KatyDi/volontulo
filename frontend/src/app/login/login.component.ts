@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
     username: '',
     password: '',
   };
-  honeyBunny: string = '';
+  honeyBunny: '';
   loginError$: Observable<any>;
 
   constructor(private authService: AuthService) { }
